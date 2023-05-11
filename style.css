@@ -101,10 +101,14 @@ header .wrap {
   font: bold 25px/50px "맑은 고딕";
   color: #333;
 }
-#gnb > li > a:hover {
+#gnb > li:hover > a {
   background-color: #333;
   color: #fff;
 }
+/* #gnb > li > a:hover {
+  background-color: #333;
+  color: #fff;
+} */
 #gnb > li > a.on {
   background-color: #333;
   color: #fff;
@@ -220,6 +224,19 @@ article .content ul {
   height: 100%;
   object-fit: cover;
 }
+/* css에서의 갤러리 마우스 오버 */
+/* .gallery .content a {
+  display: block;
+  width: 90px;
+}
+.gallery .content a img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.gallery .content a:hover {
+  opacity: 0.6;
+} */
 /* 바로가기 */
 .baro {
   width: 100%;

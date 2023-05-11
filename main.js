@@ -34,4 +34,13 @@ $(document).ready(function () {
   }, 3000);
 
   //갤러리 마우스 오버
+  $(".gallery>.content>a>img").css({ opacity: "0.6" });
+  $(".gallery>.content>a").hover(
+    function () {
+      $(this).children("img").css("opacity", "1");
+    },
+    function () {
+      $(this).children("img").css("opacity", "0.6");
+    }
+  );
 });
